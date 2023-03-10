@@ -1,0 +1,13 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\XbShopSolution.Data\XbShopSolution.Data.csproj" />
+    <ProjectReference Include="..\XbShopSolution.Utilities\XbShopSolution.Utilities.csproj" />
+    <ProjectReference Include="..\XbShopSolution.ViewModel\XbShopSolution.ViewModel.csproj" />
+  </ItemGroup>
+
+</Project>
