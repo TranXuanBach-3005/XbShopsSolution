@@ -21,6 +21,7 @@ using XbShopSolution.Application.UnitOfWorks;
 using XbShopSolution.Data.EF;
 using XbShopSolution.Data.Entities;
 using XbShopSolution.Utilities.Constants;
+using XbShopSolution.ViewModel.AutoMapper;
 
 namespace XbShopSolution.API
 {
@@ -49,6 +50,10 @@ namespace XbShopSolution.API
             services.AddIdentity<User, Role>()
                    .AddEntityFrameworkStores<xbSolutionDbContext>()
                    .AddDefaultTokenProviders();
+            services.AddControllersWithViews();
+            services.AddAutoMapper
+        (typeof(Mapping).Assembly);
+
             //service,repository,unitofwork
             services.AddScoped<IUnitOfWork, UnitOfWork>();
             services.AddScoped<IProductRepository, ProductRepository>();
@@ -66,6 +71,7 @@ namespace XbShopSolution.API
             services.AddScoped<IUserService, UserService>();
             services.AddScoped<IRoleService, RoleService>();
             services.AddScoped<ISlideService, SlideService>();
+            services.AddScoped<IFileService, FileService>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -79,6 +85,8 @@ namespace XbShopSolution.API
             }
 
             app.UseHttpsRedirection();
+
+            app.UseStaticFiles();
 
             app.UseRouting();
 

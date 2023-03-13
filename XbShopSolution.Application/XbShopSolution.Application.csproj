@@ -8,6 +8,7 @@
     <ProjectReference Include="..\XbShopSolution.Data\XbShopSolution.Data.csproj" />
     <ProjectReference Include="..\XbShopSolution.Utilities\XbShopSolution.Utilities.csproj" />
     <ProjectReference Include="..\XbShopSolution.ViewModel\XbShopSolution.ViewModel.csproj" />
+    <ProjectReference Include="..\XbShopSolution.WebApp\XbShopSolution.WebApp.csproj" />
   </ItemGroup>
 
 </Project>

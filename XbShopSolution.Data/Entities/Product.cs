@@ -11,6 +11,9 @@ namespace XbShopSolution.Data.Entities
     public class Product:Auditable
     {
         public int Id { get; set; }
+        public string Name { get; set; }
+        public string Description { set; get; }
+        public string Details { set; get; }
         public decimal Price { get; set; }
         public decimal OriginaPrice { get; set; }
         public int Stock { get; set; }

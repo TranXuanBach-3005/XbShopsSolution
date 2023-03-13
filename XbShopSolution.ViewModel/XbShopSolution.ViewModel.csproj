@@ -9,8 +9,11 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="AutoMapper\" />
-    <Folder Include="ViewModel\" />
+    <Folder Include="ViewModel\Users\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\XbShopSolution.Data\XbShopSolution.Data.csproj" />
   </ItemGroup>
 
 </Project>

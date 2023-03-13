@@ -15,6 +15,7 @@ namespace XbShopSolution.Data.Entities
         public bool IsDefault { get; set; }
         public int SortOrder { get; set; }
         public long FileSize { get; set; }
+        public DateTime CreateDated { get; set; }
         public Product Product { get; set; }
     }
 }
